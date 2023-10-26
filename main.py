@@ -1,16 +1,20 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}. This is a test. This is the second test.')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# KYRYL MALYSHEV
+# a
+n = 7
+for i in range (0,n):
+  current_line = "K"
+  for i in range (0, abs(3-i)):
+    current_line += " "
+  finished = current_line + "K "
+  if len(finished) < 6:
+    for i in range (0, 6-len(finished)):
+      finished += " "
+  if i == 0:
+    finished += "M   M"
+  elif i == 1 or 2:
+    finished += "MM MM"
+  elif i == 3:
+    finished += "M M M"
+  elif i == 4 or 5 or 6:
+    finished += "M   M"
+  print(finished)
