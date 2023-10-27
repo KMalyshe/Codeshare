@@ -24,6 +24,7 @@ def purchase(plist, key):
 def tax(currtot):
     """
 
+    :currtot: Current total.
     :return: Returns the total including tax.
     """
     return currtot * 1.088
