@@ -16,7 +16,6 @@ def purchase(plist, key):
 
     :param plist: The current receipt (short for purchaselist, as defined above)
     :param key: The item to be added, to be searched in the dictionary
-    :return: Returns the current list of purchases, appended with the new item.
     """
     plist.append(Items[key])
 
